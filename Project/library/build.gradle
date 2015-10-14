@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'SnakeProgressView'
+
+    publishedGroupId = 'com.vishnus1224.snakeprogressview'
+    libraryName = 'SnakeProgressView'
+    artifact = 'library'
+
+    libraryDescription = 'A youtube style android progress view for playing the classic snake game.'
+
+    siteUrl = 'https://github.com/vishnus1224/SnakeProgressView'
+    gitUrl = 'https://github.com/vishnus1224/SnakeProgressView.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'vishnus1224'
+    developerName = 'Vishnu Shirodker'
+    developerEmail = 'vishnus1224@gmail.com'
+
+    licenseName = 'MIT'
+    licenseUrl = 'http://opensource.org/licenses/MIT'
+    allLicenses = ["MIT"]
+}
+
 android {
     compileSdkVersion 21
     buildToolsVersion "23.0.1"
@@ -17,4 +41,7 @@ android {
         }
     }
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
 
