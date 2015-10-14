@@ -65,7 +65,7 @@ Following is the xml layout from the sample project:
 </RelativeLayout>
 ```
 
-***Java code example***
+***Java code example***   
 For adding and customizing the view in code, follow the same steps used for creating any other view in code.   
 e.g.   
 ```
