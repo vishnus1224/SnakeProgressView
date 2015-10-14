@@ -16,9 +16,9 @@ The namespace has following custom attributes:
  </declare-styleable>
 ```
 
-***Usage Tips***
--For using this view in a layout, define it as the last child as it will be drawn on top of other views. 
--The view has a transparent background color. Hence the content below will be visible.
+***Usage Tips***  
+-For using this view in a layout, define it as the last child as it will be drawn on top of other views.    
+-The view has a transparent background color. Hence the content below will be visible.  
 -Preferably set the view width and height to match_parent so that the entire screen is available as the playing area.
 
 Following is the xml layout from the sample project:
