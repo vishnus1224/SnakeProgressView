@@ -1,6 +1,10 @@
 # SnakeProgressView
 A youtube style android progress view for playing the classic snake game.
 
+##Demo
+
+![](https://github.com/vishnus1224/SnakeProgressView/blob/master/Project/demo/demo.gif)
+
 #Usage
 
 Provide an identifier for the namespace to use custom attributes in xml. I have named it snake.
