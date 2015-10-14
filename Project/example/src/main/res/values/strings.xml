@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SnakeProgressBarExample</string>
+    <string name="action_settings">Settings</string>
+</resources>
