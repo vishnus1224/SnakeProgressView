@@ -7,9 +7,17 @@ A youtube style android progress view for playing the classic snake game.
 
 #Usage   
 
-Set the view's visibility to `INVISIBLE` to hide the view whenever a long running task is complete. Similarly make it `VISIBLE` to allow the user to interact with it, while data is being fetched in the background.
+Add the following line to the build.gradle file in order to use the library:
+```
+compile 'com.vishnus1224.snakeprogressview:library:1.0'
+```
 
-Provide an identifier for the namespace to use custom attributes in xml. I have named it snake.
+Set the view's visibility to `INVISIBLE` to hide the view whenever a long running task is complete. Similarly make it `VISIBLE` to allow the user to interact with it, while data is being fetched in the background.   
+
+Currently, the snake color and the item color are customizable and can be done either via xml or through code.
+
+For doing it in xml:   
+Create an identifier for the namespace to use custom attributes in xml. I have named it snake.
 ```
 xmlns:snake="http://schemas.android.com/apk/res-auto"
 ```    
@@ -27,6 +35,7 @@ The namespace has following custom attributes:
 -The view has a transparent background color. Hence the content below will be visible.  
 -Preferably set the view width and height to match_parent so that the entire screen is available as the playing area.
 
+#Sample   
 Following is the xml layout from the sample project:
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -55,3 +64,16 @@ Following is the xml layout from the sample project:
 
 </RelativeLayout>
 ```
+
+***Java code example***
+For adding and customizing the view in code, follow the same steps used for creating any other view in code.   
+e.g.   
+```
+SnakeProgressView snakeProgressView = new SnakeProgressView(context);
+snakeProgressView.setSnakeColor(specify the desired color);
+snakeProgressView.setItemColor(specify the desired color);
+
+rootLayout.addView(snakeProgressView);
+```
+
+#ENJOY
