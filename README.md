@@ -5,7 +5,9 @@ A youtube style android progress view for playing the classic snake game.
 
 ![](https://github.com/vishnus1224/SnakeProgressView/blob/master/Project/demo/demo.gif)
 
-#Usage
+#Usage   
+
+Set the view's visibility to `INVISIBLE` to hide the view whenever a long running task is complete. Similarly make it `VISIBLE` to allow the user to interact with it, while data is being fetched in the background.
 
 Provide an identifier for the namespace to use custom attributes in xml. I have named it snake.
 ```
